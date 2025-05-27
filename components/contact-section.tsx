@@ -33,7 +33,7 @@ export default function ContactSection() {
     const body = encodeURIComponent(
       `Hi Thejana,\n\nName: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}\n\nBest regards,\n${formData.name}`,
     )
-    const mailtoLink = `mailto:devops.engineer@example.com?subject=${subject}&body=${body}`
+    const mailtoLink = `mailto:thejanaravindu2000@gmail.com?subject=${subject}&body=${body}`
 
     // Create a temporary link element and click it
     const link = document.createElement("a")
@@ -231,7 +231,7 @@ export default function ContactSection() {
                   <Github className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/thejanaravindu"
+                  href="https://linkedin.com/in/username"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
