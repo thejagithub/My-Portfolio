@@ -133,7 +133,7 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
 
             {/* Resume Button */}
             <a
-              href="/resume.pdf"
+              href="/Thejana Ravindu Resume.pdf"
               download
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-blue-500/25"
             >
@@ -201,7 +201,7 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
               Contact
             </button>
             <a
-              href="/resume.pdf"
+              href="/Thejana Ravindu Resume.pdf"
               download
               className="flex items-center gap-2 mx-3 mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-base font-medium transition-colors"
             >
