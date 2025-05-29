@@ -4,6 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle } from "lucide-react"
+import ScrollReveal from "@/components/scroll-reveal"
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -57,12 +58,16 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal direction="fade" duration={800}>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
+        </ScrollReveal>
+        
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
+          <ScrollReveal direction="up" delay={300} duration={800}>
           <div className="bg-gray-700 rounded-2xl p-8 shadow-sm border border-gray-600">
             <h3 className="text-2xl font-semibold text-white mb-6">Send a Message</h3>
 
@@ -170,8 +175,9 @@ export default function ContactSection() {
               </div>
             </div> */}
           </div>
-
+        </ScrollReveal>
           {/* Contact Info */}
+          <ScrollReveal direction="right" delay={400} duration={800}>
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-white mb-6">Let's Connect</h3>
@@ -250,6 +256,7 @@ export default function ContactSection() {
               </p>
             </div> */}
           </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

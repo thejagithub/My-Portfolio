@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Download } from "lucide-react"
+import ScrollReveal from "@/components/scroll-reveal"
 
 interface HeroSectionProps {
   scrollToSection: (sectionId: string) => void
@@ -54,8 +55,10 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
     <section id="home" className="pt-16 min-h-screen flex items-center bg-gradient-to-br from-gray-800 to-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 font-sans">Hello, I am Thejana</h1>
-
+          <ScrollReveal direction="fade" duration={800}>
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 font-sans">Hello, I am Thejana</h1>
+          </ScrollReveal>
+        <ScrollReveal direction="up" delay={300} duration={800}>
           <div className="h-16 md:h-20 flex items-center justify-center mb-12">
             <div className="text-2xl md:text-4xl text-blue-400 font-medium flex items-center">
               <span className="min-w-0">{currentText}</span>
@@ -64,7 +67,8 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
               </span>
             </div>
           </div>
-
+        </ScrollReveal>
+        <ScrollReveal direction="up" delay={600} duration={800}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => scrollToSection("projects")}
@@ -81,6 +85,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
               Download Resume
             </a>
           </div>
+        </ScrollReveal>
         </div>
       </div>
     </section>

@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import ProjectCard from "@/components/project-card"
 import { projectsData } from "@/data/projects"
+import ScrollReveal from "@/components/scroll-reveal"
 
 export default function ProjectsSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -69,12 +70,14 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal direction="fade" duration={800}>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Projects</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
           <p className="text-gray-400 mt-4">Ideas, implemented.</p>
         </div>
-
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={300} duration={800}>  
         <div className="relative">
           {/* Slider Container */}
           <div
@@ -136,6 +139,7 @@ export default function ProjectsSection() {
             </div>
           </div>
         </div>
+      </ScrollReveal>
       </div>
     </section>
   )

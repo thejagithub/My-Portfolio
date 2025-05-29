@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import RecommendationCard from "@/components/recommendation-card"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { recommendationsData } from "@/data/recommendations"
+import ScrollReveal from "@/components/scroll-reveal"
 
 export default function RecommendationsSection() {
   const [currentRecommendation, setCurrentRecommendation] = useState(0)
@@ -28,12 +29,14 @@ export default function RecommendationsSection() {
   return (
     <section id="recommendations" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ScrollReveal direction="fade" duration={800}>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Recommendations</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
           <p className="text-gray-400 mt-4">What my colleagues say about working with me</p>
         </div>
-
+        </ScrollReveal>
+        <ScrollReveal direction="up" delay={300} duration={800}>
         <div className="relative max-w-4xl mx-auto">
           {/* Carousel Container */}
           <div className="overflow-hidden rounded-2xl">
@@ -76,6 +79,7 @@ export default function RecommendationsSection() {
             ))}
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </section>
   )
