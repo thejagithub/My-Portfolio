@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import CertificationCard from "@/components/certification-card"
 import { certificationsData } from "@/data/certifications"
+import ScrollReveal from "@/components/scroll-reveal"
 
 export default function CertificationsSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -78,6 +79,7 @@ export default function CertificationsSection() {
   return (
     <section id="certifications" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal direction="fade" duration={800}>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Certifications</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
@@ -99,7 +101,8 @@ export default function CertificationsSection() {
             </div>
           </div>
         </div>
-
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={300} duration={800}>
         <div className="relative">
           {/* Slider Container */}
           <div
@@ -161,6 +164,7 @@ export default function CertificationsSection() {
             </div>
           </div>
         </div>
+      </ScrollReveal>
       </div>
     </section>
   )

@@ -1,14 +1,18 @@
 import SkillsSection from "@/components/skills-section"
+import ScrollReveal from "@/components/scroll-reveal"
 
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* About Me */}
+      <ScrollReveal direction="fade" duration={800}>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={200} duration={800}>
         <div className="max-w-4xl mx-auto mb-20">
           <div className="bg-gray-700 rounded-2xl p-8 md:p-12">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
@@ -30,9 +34,11 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-
+      </ScrollReveal>
         {/* Skills Section */}
+        <ScrollReveal direction="up" delay={400} duration={800}>
         <SkillsSection />
+      </ScrollReveal>
       </div>
     </section>
   )
