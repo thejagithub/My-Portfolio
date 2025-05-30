@@ -13,7 +13,7 @@ export default function RecommendationsSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRecommendation((prev) => (prev + 1) % recommendationsData.length)
-    }, 5000) // Change every 5 seconds
+    }, 15000) // Change every 15 seconds
 
     return () => clearInterval(interval)
   }, [])
@@ -45,7 +45,7 @@ export default function RecommendationsSection() {
               style={{ transform: `translateX(-${currentRecommendation * 100}%)` }}
             >
               {recommendationsData.map((rec, index) => (
-                <div key={index} className="w-full flex-shrink-0 px-4">
+                <div key={index} className="w-full flex-shrink-0 px-2 md:px-4">
                   <RecommendationCard recommendation={rec} />
                 </div>
               ))}
@@ -55,15 +55,17 @@ export default function RecommendationsSection() {
           {/* Navigation Buttons */}
           <button
             onClick={prevRecommendation}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-blue-500/20"
+            className="absolute left-2 md:left-0 top-1/2 transform -translate-y-1/2 md:-translate-x-4 bg-gray-800 hover:bg-gray-700 text-white p-2 md:p-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-blue-500/20 z-10"
+              aria-label="Previous recommendation"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
           </button>
           <button
             onClick={nextRecommendation}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-blue-500/20"
+           className="absolute right-2 md:right-0 top-1/2 transform -translate-y-1/2 md:translate-x-4 bg-gray-800 hover:bg-gray-700 text-white p-2 md:p-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-blue-500/20 z-10"
+              aria-label="Next recommendation"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
           </button>
 
           {/* Dots Indicator */}
@@ -75,6 +77,7 @@ export default function RecommendationsSection() {
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentRecommendation ? "bg-blue-500 scale-125" : "bg-gray-600 hover:bg-gray-500"
                 }`}
+                aria-label={`Go to recommendation ${index + 1}`}
               />
             ))}
           </div>

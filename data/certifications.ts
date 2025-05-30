@@ -10,13 +10,13 @@ export const certificationsData = [
   {
     title: "HashiCorp Terraform Associate",
     provider: "HashiCorp",
-    logo: "/Terraform Cert.png",
+    logo: "/Terraform cert.png",
     description:
       "Infrastructure as Code fundamentals and Terraform best practices. Covers configuration language, state management, and workflow automation.",
     status: "in-progress" as const,
   },
   {
-    title: "Red Hat Certified System Administrator exam | EX200",
+    title: "Red Hat Certified System Administrator",
     provider: "Red Hat",
     logo: "/RHCSA Cert.png",
     description:

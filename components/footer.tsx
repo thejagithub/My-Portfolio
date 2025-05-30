@@ -242,7 +242,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
             className="pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4"
           >
             <p className="text-gray-400 text-sm text-center sm:text-left">
-              © {new Date().getFullYear()} Thejana Ravindu. All rights reserved.
+              © {new Date().getFullYear()} Thejana Ravindu. All Rights Reserved.
             </p>
             <div className="flex items-center gap-4 text-gray-400 text-sm">
               <span>Made with love ❤️ and caffeine ☕</span>

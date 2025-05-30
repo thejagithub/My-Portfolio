@@ -5,7 +5,7 @@ export const recommendationsData = [
     name: "Udani Punsandee",
     title: "Senior DevOps Engineer",
     company: "IFS R&D International",
-    avatar: "/udani.jpeg",
+    avatar: "/Udani.jpeg",
   },
   {
     quote:
