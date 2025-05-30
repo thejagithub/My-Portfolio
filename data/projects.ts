@@ -6,6 +6,7 @@ export const projectsData = [
     github: "https://github.com/thejagithub/MERN-Kubernetes-Deployment.git",
     //demo: "https://demo.example.com",
     image: "/K8 project.png",
+    status: "completed" as const,
   },
   {
     title: "AWS Resource Manager",
@@ -14,6 +15,7 @@ export const projectsData = [
     github: "https://github.com/thejagithub/AWS-Resource-Manager.git",
     //demo: "https://demo.example.com",
     image: "/AWS Resource Manager.png",
+    status: "completed" as const,
   },
   {
     title: "MERN Application on Docker Compose",
@@ -22,6 +24,7 @@ export const projectsData = [
     github: "https://github.com/thejagithub/MERN-Docker-Compose.git",
     //demo: "https://demo.example.com",
     image: "/MERN Docker.png",
+    status: "completed" as const,
   },
   {
     title: "Ansible Apache Setup",
@@ -30,6 +33,7 @@ export const projectsData = [
     github: "https://github.com/thejagithub/Ansible-Apache-Setup.git",
     //demo: "https://demo.example.com",
     image: "/Ansible.png",
+    status: "completed" as const,
   },
   // {
   //   title: "Cloud Migration Platform",
