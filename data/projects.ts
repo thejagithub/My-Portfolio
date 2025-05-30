@@ -5,7 +5,7 @@ export const projectsData = [
     tools: ["Docker", "Kubernetes", "Minikube", "GitHub", "React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/thejagithub/MERN-Kubernetes-Deployment.git",
     //demo: "https://demo.example.com",
-    image: "/k8 project.png",
+    image: "/K8 project.png",
   },
   {
     title: "AWS Resource Manager",

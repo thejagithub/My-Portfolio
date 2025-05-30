@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, Download, ChevronDown } from "lucide-react"
+import { Download, ChevronDown } from "lucide-react"
 
 interface NavigationProps {
   activeSection: string
@@ -142,21 +142,42 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
             </a>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile menu button with animation*/}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-300 hover:text-white p-2 rounded-md transition-colors"
+              className="relative text-gray-300 hover:text-white p-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-label="Toggle mobile menu"
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              <div className="w-6 h-6 relative">
+                {/* Hamburger lines with animation */}
+                <span
+                  className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 ease-in-out ${
+                    isMenuOpen ? "rotate-45 translate-y-2.5" : "translate-y-0"
+                  }`}
+                />
+                <span
+                  className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 ease-in-out translate-y-2.5 ${
+                    isMenuOpen ? "opacity-0" : "opacity-100"
+                  }`}
+                />
+                <span
+                  className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 ease-in-out ${
+                    isMenuOpen ? "-rotate-45 translate-y-2.5" : "translate-y-5"
+                  }`}
+                />
+              </div>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden border-t border-gray-700">
+      {/* Mobile Navigation with slide animation */}
+      <div
+        className={`md:hidden border-t border-gray-700 overflow-hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
           <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-800">
             <button
               onClick={() => handleScrollToSection("home")}
@@ -210,7 +231,6 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
             </a>
           </div>
         </div>
-      )}
     </nav>
   )
 }
