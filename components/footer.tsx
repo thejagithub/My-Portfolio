@@ -245,7 +245,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
               © {new Date().getFullYear()} Thejana Ravindu. All rights reserved.
             </p>
             <div className="flex items-center gap-4 text-gray-400 text-sm">
-              <span>Made with love and caffeine ☕ by TR</span>
+              <span>Made with love ❤️ and caffeine ☕</span>
             </div>
           </motion.div>
         </motion.div>
