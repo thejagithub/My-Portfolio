@@ -25,6 +25,14 @@ export const recommendationsData = [
   },
   {
     quote:
+      "I had the privilege of teaming up with Thejana during our university years, where we worked closely together on the same projects. He is a dedicated and passionate team member who consistently commits to group work. His knowledge and expertise in cybersecurity are impressive, and he is always willing to share his insights and help his colleagues. Thejana's ability to adapt to any condition and his commitment to teamwork make him an invaluable asset to any team. I highly recommend Thejana for any role in cybersecurity or related fields, as his dedication and passion are truly commendable.",
+    name: "Vihanga Hemachandra",
+    title: "Associate ABAP Consultant",
+    company: "Hayleys Advantis Limited",
+    avatar: "/Vihanga.jpg",
+  },
+  {
+    quote:
       "I had the privilege of working alongside Thejana during his internship at Dialog Axiata PLC. During this time, he was actively engaged in learning and applying his skills in Java, Spring Boot, and SQL. Thejana contributed significantly to our backend development projects, utilizing Spring Boot to enhance the performance and scalability of our applications.Thejana demonstrated a strong aptitude for backend development tasks, showing a keen ability to optimize database queries and improve system efficiency. His proactive learning approach and hands-on contributions were valuable to the team.",
     name: "Danuka Bhathiya",
     title: "Software Engineer",

@@ -31,9 +31,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           label: "In Progress",
           bgColor: "bg-yellow-600/20",
           borderColor: "border-yellow-600/30",
-          textColor: "text-yellow-300",
+          textColor: "text-yellow-600",
           icon: Clock,
-          iconColor: "text-yellow-400",
+          iconColor: "text-yellow-600",
         }
       default:
         return {
