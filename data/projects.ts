@@ -35,14 +35,15 @@ export const projectsData = [
     image: "/Ansible.png",
     status: "completed" as const,
   },
-  // {
-  //   title: "Cloud Migration Platform",
-  //   description: "Automated cloud migration tool for legacy applications to AWS with zero downtime",
-  //   tools: ["AWS", "Python", "Terraform", "Lambda"],
-  //   github: "https://github.com/username/cloud-migration",
-  //   demo: "https://demo.example.com",
-  //   image: "/placeholder.svg?height=200&width=400&text=Cloud+Migration",
-  // },
+  {
+    title: "End-to-End CI/CD Pipeline for a Java Application",
+    description: "Implementing an end-to-end CI/CD pipeline for a Java-based application, following DevOps best practices for secure and scalable cloud deployment. The pipeline automates build and testing processes using Jenkins, Maven, and GitHub webhooks, with SonarQube integrated for static code analysis and quality assurance. The application is containerized with Docker and deployed to a Kubernetes cluster via Argo CD using a GitOps approach for version-controlled, repeatable deployments. Infrastructure was provisioned on an AWS EC2 instance, and Helm was used for managing Kubernetes manifests.",
+    tools: ["Jenkins", "Maven", "SonarQube", "Argo CD", "Docker", "Kubernetes (minikube)", "Helm", "AWS EC2","GitHub"],
+    // github: "https://github.com/username/cloud-migration",
+    // demo: "https://demo.example.com",
+    image: "/Java.png",
+    status: "in-progress" as const,
+  },
   // {
   //   title: "Security Compliance Scanner",
   //   description: "Automated security scanning and compliance reporting for containerized applications",
