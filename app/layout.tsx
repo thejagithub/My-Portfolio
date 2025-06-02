@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Poppins } from "next/font/google"
 import './globals.css'
 import Script from 'next/script'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next"  
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -43,6 +43,7 @@ export default function RootLayout({
             gtag('config', 'G-JR3V1CKRKK');
           `}
         </Script>
+        <Analytics />
       </head>
       <body>{children}</body>
     </html>
