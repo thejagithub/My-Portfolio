@@ -16,7 +16,7 @@ export default function AboutSection() {
         <div className="max-w-4xl mx-auto mb-20">
           <div className="bg-gray-700 rounded-2xl p-8 md:p-12">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              Hello, I'm Thejana — a DevOps enthusiast passionate about building scalable, secure, and automated
+              I'm Thejana — a DevOps enthusiast passionate about building scalable, secure, and automated
               infrastructure. With a strong foundation in cloud platforms, CI/CD pipelines, and infrastructure as code,
               I focus on delivering robust DevOps solutions that streamline development and deployment processes.
             </p>
