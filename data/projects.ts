@@ -37,12 +37,12 @@ export const projectsData = [
   },
   {
     title: "End-to-End CI/CD Pipeline for a Java Application",
-    description: "Implementing an end-to-end CI/CD pipeline for a Java-based application, following DevOps best practices for secure and scalable cloud deployment. The pipeline automates build and testing processes using Jenkins, Maven, and GitHub webhooks, with SonarQube integrated for static code analysis and quality assurance. The application is containerized with Docker and deployed to a Kubernetes cluster via Argo CD using a GitOps approach for version-controlled, repeatable deployments. Infrastructure was provisioned on an AWS EC2 instance, and Helm was used for managing Kubernetes manifests.",
-    tools: ["Jenkins", "Maven", "SonarQube", "Argo CD", "Docker", "Kubernetes (minikube)", "Helm", "AWS EC2","GitHub"],
+    description: "Implemented a CI/CD pipeline for a Spring Boot application using Jenkins, Docker, Kubernetes (Minikube), and Argo CD. Integrated SonarQube for code quality analysis, and configured Prometheus and Grafana for monitoring. Included email notifications to ensure visibility of successful builds and deployments.",
+    tools: ["Jenkins", "Maven", "SonarQube", "Argo CD", "Docker", "Kubernetes (minikube)", "Prometheus", "Grafana", "AWS EC2","GitHub"],
     // github: "https://github.com/username/cloud-migration",
     // demo: "https://demo.example.com",
     image: "/Java.png",
-    status: "in-progress" as const,
+    status: "completed" as const,
   },
   // {
   //   title: "Security Compliance Scanner",

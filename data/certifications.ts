@@ -8,21 +8,22 @@ export const certificationsData = [
     status: "in-progress" as const,
   },
   {
-    title: "HashiCorp Terraform Associate",
-    provider: "HashiCorp",
-    logo: "/Terraform cert.png",
-    description:
-      "Infrastructure as Code fundamentals and Terraform best practices. Covers configuration language, state management, and workflow automation.",
-    status: "in-progress" as const,
-  },
-  {
     title: "Red Hat Certified System Administrator",
     provider: "Red Hat",
     logo: "/RHCSA Cert.png",
     description:
       "Container orchestration and Kubernetes cluster administration. Covers deployment, scaling, networking, and troubleshooting containerized applications.",
+    status: "in-progress" as const,
+  },
+  {
+    title: "HashiCorp Terraform Associate",
+    provider: "HashiCorp",
+    logo: "/Terraform cert.png",
+    description:
+      "Infrastructure as Code fundamentals and Terraform best practices. Covers configuration language, state management, and workflow automation.",
     status: "not-started" as const,
   },
+  
   // {
   //   title: "Docker Certified Associate",
   //   provider: "Docker Inc.",
