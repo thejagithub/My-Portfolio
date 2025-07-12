@@ -5,14 +5,14 @@ export const certificationsData = [
     logo: "/AWS Cert.png",
     description:
       "Foundational understanding of AWS Cloud concepts, services, and terminology. Covers core AWS services, security, architecture, pricing, and support.",
-    status: "in-progress" as const,
+    status: "completed" as const,
   },
   {
     title: "Red Hat Certified System Administrator",
     provider: "Red Hat",
     logo: "/RHCSA Cert.png",
     description:
-      "Container orchestration and Kubernetes cluster administration. Covers deployment, scaling, networking, and troubleshooting containerized applications.",
+      "Foundational understanding of Red Hat Enterprise Linux system administration. Covers essential command-line skills, user management, storage, networking, security, and system processes.",
     status: "in-progress" as const,
   },
   {
